@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
-    
-    <Grid VerticalAlignment="Top">
+
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
@@ -25,7 +25,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="outbox" Text="Nothing" FontSize="30" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,24,79.833" Grid.RowSpan="2"></TextBlock>
+        <TextBlock x:Name="outbox" Text="Nothing" FontSize="30" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0.333,79.833" Grid.RowSpan="2"></TextBlock>
         <Button x:Name="bn1" Content="1" FontSize="40" Width="80" Height="80" Grid.Row="1" Grid.Column="0" Click="Button_Click"></Button>
         <Button x:Name="bn2" Content="2" FontSize="40" Width="80" Height="80" Grid.Row="1" Grid.Column="1" Click="Button_Click"></Button>
         <Button x:Name="bn3" Content="3" FontSize="40" Width="80" Height="80" Grid.Row="1" Grid.Column="2" Click="Button_Click"></Button>
