@@ -129,15 +129,15 @@ namespace Calculator
 
         private void Memory_Click(object sender, RoutedEventArgs e)
         {
-            savedVal = Convert.ToDouble(outbox.Text);
+            if (outbox.Text != "")
+            {
+                savedVal = Convert.ToDouble(outbox.Text);
+            }
         }
 
         private void Return_Memory_Click(object sender, RoutedEventArgs e)
         {
-            if (outbox.Text != "")
-            {
-                outbox.Text = Convert.ToString(savedVal);
-            }
+            outbox.Text = Convert.ToString(savedVal);
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
